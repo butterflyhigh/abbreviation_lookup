@@ -1,0 +1,23 @@
+[package]
+name = "abbreviation_lookup"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "abbreviation_lookup"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.15.1"
+features = ["extension-module"]
+
+[dependencies]
+csv = "1.2.2"
+futures = "0.3.28"
+indicatif = "0.17.5"
+rand = "0.8.5"
+regex = "1.9.1"
+reqwest = "0.11.18"
+scraper = "0.17.1"
+serde = {version="1.0.171", features=["derive"]}
+tokio = "1.29.1"
